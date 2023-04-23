@@ -78,6 +78,8 @@
 @media screen and (max-width: 1110px) {
     .profile-picture {
         margin: 0 0px 0 80px;
+        height: 360px;
+        width: 360px;
     }
     .profile-details-name {
         font-size: 20px;
@@ -102,6 +104,8 @@
 
 @media screen and (max-width: 810px) {
     .profile-picture {
+        height: 30px;
+        width: 300px;
         margin: 0 !important;
     }
     .profile-parent {

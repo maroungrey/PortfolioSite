@@ -22,26 +22,32 @@ export default class ScrollService {
         if(!homeScreen) return;
         homeScreen.scrollIntoView({behavior: "smooth"})
     }
-    isElementInView=(elem, type)=> {
-        let rec = elem.getBondingClientRec();
+
+    /* CHECK IF ELEMENT IS IN VIEW .this simply means if the document appears fully on the screen or not */
+    isElementInView = (elem, type) => {
+        let rec = elem.getBoundingClientRect();
+        //this method returns a DOMRect object providing information about the size of an element and its position relative to the viewport.
+        // the view port  refers to the part of the document you're viewing which is currently visible in its window
         let elementTop = rec.top;
-        let elementBottom = rec.Bottom;
+        let elemBottom = rec.bottom;
 
-        let partiallyVisible = elementTop < window.innerHeight && elementBottom >=0;
-        let completelyVisible = elementTop >= 0 && elementBottom <= window.innerHeight;
+        /* when the element is Partially Visible */
+        let partiallyVisible = elementTop < window.innerHeight && elemBottom >= 0;
 
-        switch(type) {
-            case "partial":
+        /* Completely Visible */
+        let completelyVisible = elementTop >= 0 && elemBottom <= window.innerHeight;
+
+        switch (type) {
+        case "partial":
             return partiallyVisible;
 
-            case "complete":
-                return completelyVisible
-                default:
-                    return false;
+        case "complete":
+            return completelyVisible;
+
+        default:
+            return false;
         }
-
-
-    }
+    };
 
     checkCurrentScreenUnderViewport =(event) =>{
         if(!event || Object.keys(event).length < 1)
