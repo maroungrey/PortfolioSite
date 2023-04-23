@@ -13,7 +13,7 @@
     color: var(--white);
   }
   .header-logo {
-    font-size: 50px;
+    font-size: 2rem;
     font-family: "Poppins ExtraBold";
     color: var(--white);
   }
@@ -40,11 +40,14 @@
   
   /*IPAD PRO RESPONSIVENESS*/
   @media only screen and (max-width: 1110px) {
-    header-parent {
+    .header-parent {
       width: 80%;
     }
   }
   @media only screen and (max-width: 970px) {
+    .header-logo {
+      font-size: 1rem;
+    }
     .header-hamburger {
       display: block;
     }
@@ -84,4 +87,4 @@
       opacity: 1;
     }
   }
-  
+
