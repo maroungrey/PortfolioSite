@@ -6,22 +6,22 @@ export default class ScrollService {
     static scrollHandler = new ScrollService();
 
     static currentScreenBroadcaster = new Subject();
-    static currentScreenFadeIn = new Subject()
+    static currentScreenFadeIn = new Subject();
 
 
-    constructor(){
+    constructor() {
         window.addEventListener('scroll', this.checkCurrentScreenUnderViewport);
     }
-    scrollToHireMe = ()=>{
-        let contactMeScreen = document.getElementsById("Contact Me")
+    scrollToHireMe = ()=> {
+        let contactMeScreen = document.getElementById("ContactMe");
         if(!contactMeScreen) return;
-        contactMeScreen.scrollIntoView({behavior: "smooth"})
-    }
-    scrollToHome = ()=>{
-        let homeScreen = document.getElementsById("Home")
+        contactMeScreen.scrollIntoView({behavior: "smooth"});
+    };
+    scrollToHome = ()=> {
+        let homeScreen = document.getElementById("Home");
         if(!homeScreen) return;
-        homeScreen.scrollIntoView({behavior: "smooth"})
-    }
+        homeScreen.scrollIntoView({behavior: "smooth"});
+    };
 
     /* CHECK IF ELEMENT IS IN VIEW .this simply means if the document appears fully on the screen or not */
     isElementInView = (elem, type) => {

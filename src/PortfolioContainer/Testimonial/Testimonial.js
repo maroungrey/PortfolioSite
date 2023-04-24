@@ -10,7 +10,7 @@ import Animations from "../../utilities/Animations";
 
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
   const fadeInSubscription =
@@ -44,7 +44,7 @@ export default function Testimonial(props) {
         title={"Testimonial"}
         subHeading={"What My Client Say About Me"}
       />
-      <section className="testimonial-section" id={props.id || ""}>
+      <section className="testimonial-section fade-in" id={props.id || ""}>
         <div className="container">
           <div className="row">
             <OwlCarousel className="owl-carousel" id="testimonial-carousel" {...options}>
