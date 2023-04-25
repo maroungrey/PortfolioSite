@@ -30,27 +30,30 @@
 
 
 .profile-img {
-    height:300px; /* give your required height */
+    height: 300px; /* give your required height */
     width: 300px;
     background:url('https://avatars.githubusercontent.com/u/62679040?v=4');
     background-size:cover;
 
 }
-.profile-img-desktop {
-    display: block
-}
+
 .profile-img-desktop .profile-img{
     float: right;
-}
-.profile-img-mobile {
-    display: none;
 }
 .profile-img-mobile .profile-img {
     margin: auto;
 }
 
+@media screen and (min-width: 768px) {
+    .profile-img-desktop {
+        display: block
+    }
+    .profile-img-mobile {
+        display: none;
+    }
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .profile-details-name {
         font-size: 2rem;
     }

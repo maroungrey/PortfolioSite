@@ -1,70 +1,80 @@
 .header-container {
-    display: flex;
-    justify-content: center;
-    height: 149px;
-    color: var(--white);
+    color: white;
   }
   .header-parent {
-    display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    width: 70%;
-    color: var(--white);
+    color: white;
   }
   .header-logo {
-    font-size: 2rem;
+    max-width: 350px;
+    margin: auto;
     font-family: "Poppins ExtraBold";
-    color: var(--white);
+    color: white;
   }
   .header-options {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .header-option {
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     font-weight: 600;
   }
-  .header-hamburger {
-    display: none;
-    color: var(--white);
-  }
   .header-option-separator {
     margin: 0 50px 0 0;
-    color: var(--white);
+    color: white;
   }
   .selected-header-option {
     color: var(--maroon);
   }
-  
-  /*IPAD PRO RESPONSIVENESS*/
-  @media only screen and (max-width: 1110px) {
+  .header-hamburger {
+    display: none;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .header-logo {
+      display: block;
+      float: none;
+      margin: 1rem auto !important;
+    }
+    .header-logo img {
+      width: 100%;
+    }
     .header-parent {
-      width: 80%;
+      display: block;
     }
   }
-  @media only screen and (max-width: 970px) {
+
+
+
+  @media only screen and (max-width: 768px) {
+    .header-container {
+      padding: 1rem;
+    }
     .header-logo {
-      font-size: 1rem;
+      display: inline-block;
+      float: right;
+    }
+    .header-logo img {
+      width: 38vw;
     }
     .header-hamburger {
       display: block;
     }
     .header-parent {
-      width: 100%;
-      padding: 0 40px;
+      display: inline-block;
       position: relative;
     }
     .header-options {
       display: flex;
       flex-direction: column;
       position: absolute;
-      left: -100%;
+      left: -50vw;
       transition: all 0.8s ease-out;
-      top: 0px;
-      height: 100vh;
-      width: 100%;
+      top: 50px;
+      height: 25vh;
+      width: 50vw;
       justify-content: space-around;
       background-color: #000;
       z-index: 1000;
@@ -74,17 +84,18 @@
       margin: 0;
     }
     .selected-header-option {
-      color: var(--white);
+      color: white;
     }
     .header-hamburger-bars {
       font-size: 36px;
       cursor: pointer;
       margin: 0px 10px;
-      color: var(--white);
+      color: white;
     }
     .show-hamburger-options {
       left: 0;
       opacity: 1;
+      padding-bottom: 40px;
     }
   }
 
