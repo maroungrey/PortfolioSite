@@ -1,4 +1,4 @@
-// paste this in the index.css
+
 
 @font-face {
   font-family: "Poppins Medium";
@@ -66,6 +66,7 @@ body {
   font-family: "Poppins Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eeeeee;
 }
 
 code {
@@ -113,16 +114,18 @@ body ::-webkit-scrollbar-thumb {
 
 
 .primary-btn:hover {
-  color: #e10c0c !important;
-  border: 2px solid #e10c0c;
-  background-color: #000;
+  color: var(--maroon) !important;
+  border: 2px solid var(--maroon);
+  background-color: transparent;
 }
 
 .highlighted-btn {
   color: white;
-
   font-size: 12px;
-  background-color: #e10c0c;
+  background-color: var(--maroon);
+}
+.highlighted-btn:hover {
+  color: #000;
 }
 @media only screen and (max-width: 568px) {
   .highlighted-btn {

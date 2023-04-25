@@ -25,9 +25,6 @@
     margin: 0 50px 0 0;
     color: white;
   }
-  .selected-header-option {
-    color: var(--maroon);
-  }
   .header-hamburger {
     display: none;
   }
@@ -43,6 +40,12 @@
     }
     .header-parent {
       display: block;
+    }
+    .selected-header-option {
+      color: var(--maroon);
+      font-weight: 600;
+      font-family: 'Poppins Bold';
+      font-size: 1.2rem;
     }
   }
 

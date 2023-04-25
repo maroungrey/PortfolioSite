@@ -1,28 +1,35 @@
-.about-me-container {
+.about-me-image {
+  width:300px;
+  height:300px;
+  background: url('https://avatars.githubusercontent.com/u/62679040?v=4');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin:auto;
+}
+.about-me-description {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 992px ) {
+  .about-me-options {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* .about-me-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 50px 0 0 0;
   }
-  .about-me-parent {
-    max-width: 1000px;
-    width: 70%;
-  }
   .about-me-card {
     display: flex;
     width: 100%;
-    box-shadow: 0 0px 20px -2px #000;
-  }
-  .about-me-profile {
-    width: 50%;
-    background-image: url("../../assets/AboutMe/lighthouse.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .about-me-details {
-    width: 48%;
     text-align: justify;
     padding: 30px;
   }
@@ -47,37 +54,12 @@
     height: 12px;
     width: 12px;
     margin: 0 10px 0 0;
-    background-color: #e10c0c;
+    background-color: var(--maroon);
     border-radius: 50%;
   }
   .about-me-options .highlighted-btn {
     margin: 0 0 0 30px;
-  }
+  } */
   
-  /*IPAD PRO RESPONSIVENESS*/
-  @media only screen and (max-width: 1110px) {
-    .about-me-parent {
-      width: 88%;
-    }
-  }
-  @media only screen and (max-width: 898px) {
-    .about-me-profile {
-      display: none;
-    }
-    .about-me-details {
-      width: 100%;
-    }
-  }
-  @media only screen and (max-width: 466px) {
-    .about-me-options {
-      display: flex;
-      flex-direction: column;
-    }
-    .about-me-options .highlighted-btn {
-      margin: 24px 0 0 0 !important;
-    }
-    .about-me-options button {
-      width: 100%;
-    }
-  }
+
   
