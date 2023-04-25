@@ -47,48 +47,35 @@ const Resume = (props) => {
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
+    // { label: "Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
-  //Skill Progress Bar
-  const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
-    { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
-  ];
-
-  const projectsDetails = [
-    {
-      title: "Lorem Ipsum",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-      subHeading: "Technologies Used: A, B, C",
-    },
-    {
-      title: "Lorem Ipsum",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-      subHeading:
-        "Technologies Used: A, B, C",
-    },
-    {
-      title: "Lorem Ipsum",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-      subHeading:
-        "Technologies Used: A, B, C, D",
-    },
-  ];
+  // const projectsDetails = [
+  //   {
+  //     title: "Lorem Ipsum",
+  //     duration: { fromDate: "2020", toDate: "2021" },
+  //     description:
+  //       "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+  //     subHeading: "Technologies Used: A, B, C",
+  //   },
+  //   {
+  //     title: "Lorem Ipsum",
+  //     duration: { fromDate: "2020", toDate: "2021" },
+  //     description:
+  //       "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+  //     subHeading:
+  //       "Technologies Used: A, B, C",
+  //   },
+  //   {
+  //     title: "Lorem Ipsum",
+  //     duration: { fromDate: "2020", toDate: "2021" },
+  //     description:
+  //       "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+  //     subHeading:
+  //       "Technologies Used: A, B, C, D",
+  //   },
+  // ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
@@ -102,27 +89,24 @@ const Resume = (props) => {
       <ResumeHeading
         heading={"Los Angeles City College"}
         subHeading={"Candidate for BS, Computer Science & Engineering"}
-        fromDate={"2010"}
+        fromDate={"2020"}
         toDate={"2022"}
       />
-      <ResumeHeading
-        heading={"Certificate"}
-        subHeading={"Lorem Ipsum"}
-      />
+
     </div>,
 
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Organic y Nature"}
+          heading={"Organic by Nature"}
           subHeading={"FULL STACK DEVELOPER"}
           fromDate={"2021"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-          𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘥 𝘢𝘯𝘥 𝘮𝘢𝘪𝘯𝘵𝘢𝘪𝘯𝘦𝘥 𝘸𝘦𝘣𝘴𝘪𝘵𝘦𝘴, 𝘤𝘳𝘦𝘢𝘵𝘪𝘯𝘨 𝘤𝘶𝘴𝘵𝘰𝘮 𝘧𝘦𝘢𝘵𝘶𝘳𝘦𝘴 𝘢𝘯𝘥 𝘭𝘢𝘺𝘰𝘶𝘵𝘴 𝘧𝘰𝘳 𝘵𝘩𝘦𝘮 𝘢𝘯𝘥 𝘰𝘱𝘵𝘪𝘮𝘪𝘻𝘦𝘥 𝘪𝘯𝘵𝘦𝘳𝘯𝘢𝘭 𝘴𝘺𝘴𝘵𝘦𝘮𝘴.
+            <em>Created, maintained and optimized websites by designing custom features and layouts while also fine-tuning internal systems.</em>
           </span>
         </div>
         <div className="experience-description">
@@ -147,47 +131,56 @@ const Resume = (props) => {
       className="resume-screen-container programming-skills-container"
       key="programming-skills"
     >
-      {programmingSkillsDetails.map((skill, index) => (
-        <div className="skill-parent" key={index}>
-          <div className="heading-bullet"></div>
-          <span>{skill.skill}</span>
-          <div className="skill-percentage">
-            <div
-              style={{ width: skill.ratingPercentage + "%" }}
-              className="active-percentage-bar"
-            ></div>
-          </div>
+      <div className='row'>
+        <div className='col'>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Shopify Plus</li>
+            <li>Bootstrap</li>
+            <li>Apache</li>
+            <li>Linux</li>
+          </ul>
         </div>
-      ))}
+        <div className='col'>
+          <ul>
+          <li>Node.js</li>
+          <li>React.js</li>
+          <li>PHP</li>
+          <li>SQL</li>
+          </ul>
+        </div>
+      </div>
     </div>,
 
     /* PROJECTS */
-    <div className="resume-screen-container" key="projects">
-      {projectsDetails.map((projectsDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectsDetails.title}
-          subHeading={projectsDetails.subHeading}
-          description={projectsDetails.description}
-          fromDate={projectsDetails.duration.fromDate}
-          toDate={projectsDetails.duration.toDate}
-        />
-      ))}
-    </div>,
+    // <div className="resume-screen-container" key="projects">
+    //   {projectsDetails.map((projectsDetails, index) => (
+    //     <ResumeHeading
+    //       key={index}
+    //       heading={projectsDetails.title}
+    //       subHeading={projectsDetails.subHeading}
+    //       description={projectsDetails.description}
+    //       fromDate={projectsDetails.duration.fromDate}
+    //       toDate={projectsDetails.duration.toDate}
+    //     />
+    //   ))}
+    // </div>,
 
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
         heading="Wood Carving"
-        description="Apart from being a tech enthusiast and a code writer, i also love to carve wooden jewelery in my free time"
+        description="One of my greatest passions is wood carving. There's something incredibly satisfying about taking a piece of raw wood and turning it into a beautiful work of art. I love experimenting with different techniques and creating intricate designs."
       />
       <ResumeHeading
         heading="Language Learning"
-        description="Language Learning is something i can never compromise with, I already speak 4 languages on the different levels"
+        description="I'm also an avid language learner. I speak 4 languages at different levels. Living in a multicultural world, I believe it's important to understand and communicate with people from different backgrounds."
       />
       <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in video games, pushing the rank and having interactive gaming sessions excites me the most."
+        heading="Growing Plants"
+        description="Growing plants is another hobby that brings me great joy. Whether it's tending to my vegetable garden or nurturing indoor plants, I enjoy the peace that comes with caring for living things."
       />
     </div>,
   ];

@@ -49,6 +49,13 @@
   src: url("./assets/fonts/Poppins-Thin.ttf");
 }
 
+@font-face {
+  font-family: "Hermit";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Hermit-Regular.otf");
+}
+
 * {
   outline: none;
 }
@@ -100,25 +107,22 @@ body ::-webkit-scrollbar-thumb {
   color: var(--white);
   border: 2px solid linen;
   font-size: 12px;
-  background-color: #1f2235;
+  background-color: #000;
+  color: white !important;
 }
-/* @media only screen and (max-width: 414px) {
-  .primary-btn {
-    font-size: 13px;
-  }
-} */
+
 
 .primary-btn:hover {
-  color: aliceblue;
-  border: 2px solid #ff5823;
-  background-color: #1f2235;
+  color: #e10c0c !important;
+  border: 2px solid #e10c0c;
+  background-color: #000;
 }
 
 .highlighted-btn {
-  color: var(--white);
+  color: white;
 
   font-size: 12px;
-  background-color: #ff5823;
+  background-color: #e10c0c;
 }
 @media only screen and (max-width: 568px) {
   .highlighted-btn {

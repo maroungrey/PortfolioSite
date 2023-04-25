@@ -54,9 +54,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Maroun and when He delivered, I honestly fell
-                      in love with the project He is a very honest guy and he
-                      delivers on time.
+                      "Working with Maroun has been a game-changer for our website. He was able to deliver a high-quality website within a tight deadline, and we couldn't be happier with the result."
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -70,7 +68,7 @@ export default function Testimonial(props) {
                         <i className="fa fa-star" />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
+                        <i className="fa fa-star" />
                       </li>
                       <li>
                         <i className="fa fa-star" />
@@ -82,8 +80,8 @@ export default function Testimonial(props) {
                       src="./img/lady.png"
                       alt="no internet connection"
                     ></img>
-                    <h5>Lady</h5>
-                    <p>CEO Lorem Ipsum</p>
+                    <h5>Amy V.</h5>
+                    <p>Entrepreneur</p>
                   </div>
                 </div>
               </div>
@@ -93,9 +91,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Maroun and when He delivered, I honestly fell
-                      in love with the project He is a very honest guy and he
-                      delivers on time.
+                      "I highly recommend Maroun to anyone looking for a web developer. He is not only skilled and knowledgeable, but also easy to work with."
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -118,8 +114,8 @@ export default function Testimonial(props) {
                   </div>
                   <div className="client-info">
                     <img src="./img/man.png" alt="no internet connection"></img>
-                    <h5>Man</h5>
-                    <p>CEO Lorem Ipsum</p>
+                    <h5>Carlo S.</h5>
+                    <p>Entrepreneur</p>
                   </div>
                 </div>
               </div>
@@ -129,9 +125,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Maroun and when He delivered, I honestly fell
-                      in love with the project He is a very honest guy and he
-                      delivers on time.
+                      "I've had the pleasure of working with Maroun on multiple projects. He have a great eye for design and a deep understanding of the technical side of things."
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -157,8 +151,8 @@ export default function Testimonial(props) {
                       src="./img/mike.png"
                       alt="no internet connection"
                     ></img>
-                    <h5>Mike</h5>
-                    <p>CEO Lorem Ipsum</p>
+                    <h5>Roy S.</h5>
+                    <p>Web Developer</p>
                   </div>
                 </div>
               </div>
@@ -168,48 +162,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I ppatronized Maroun and when He delivered, I honestly fell
-                      in love with the project He is a very honest guy and he
-                      delivers on time.
-                      <i className="fa fa-quote-right" />
-                    </p>
-                    <ul className="stars list-unstyled">
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="client-info">
-                    <img
-                      src="./img/man2.jpg"
-                      alt="no internet connection"
-                    ></img>
-                    <h5>Man 2</h5>
-                    <p>CEO Lorem Ipsum</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-12">
-                <div className="testi-item">
-                  <div className="testi-comment">
-                    <p>
-                      <i className="fa fa-quote-left" />
-                      I patronized Maroun and when He delivered, I honestly fell
-                      in love with the project He is a very honest guy and he
-                      delivers on time.
+                      Maroun took the time to understand our business needs and delivered a website that perfectly reflects our brand.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -235,8 +188,45 @@ export default function Testimonial(props) {
                       src="./img/daisy.jpg"
                       alt="no internet connection"
                     ></img>
-                    <h5>Daisy</h5>
-                    <p>CEO Lorem Ipsum</p>
+                    <h5>Lamara</h5>
+                    <p>Designer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <div className="testi-comment">
+                    <p>
+                      <i className="fa fa-quote-left" />
+                      Working with Maroun was a fantastic experience. His attention to detail, ability to problem-solve, and willingness to go the extra mile made him an invaluable asset to our team.
+                      <i className="fa fa-quote-right" />
+                    </p>
+                    <ul className="stars list-unstyled">
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star-half-alt" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="client-info">
+                    <img
+                      src="./img/man2.jpg"
+                      alt="no internet connection"
+                    ></img>
+                    <h5>David H.</h5>
+                    <p>Software Engineer</p>
                   </div>
                 </div>
               </div>

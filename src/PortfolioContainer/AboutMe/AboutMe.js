@@ -14,15 +14,17 @@ export default function AboutMe(props) {
 
     const SCREEN_CONSTANTS = {
         description:
-        "I am a software developer with the focus on eCommerce websites. I'm passionate about technology and how it is improving world around us. I've always loved helping people. Using my set of skills, I make websites more efficient, user-friendly, and accessible for everyone.",
+        "As a skilled web developer with extensive experience in both regular and e-commerce websites, I am proud to offer my expertise to clients looking to enhance their online presence. With a passion for creating intuitive and aesthetically pleasing websites, I am committed to providing my clients with the highest level of service possible. Whether you are a small business owner looking to establish your brand online or a large corporation seeking to revamp your existing website, I am confident in my ability to deliver results that meet your unique needs. With a focus on responsive design, user experience, and search engine optimization, I am dedicated to ensuring that your website not only looks great, but also drives traffic and maximizes conversions. So why wait? Let's work together to create a website that truly sets you apart from the competition!",
         highlights: {
         bullets: [
-            "Full Stack web development",
+            "Full-Stack Web development",
             "Interactive Front End",
-            "Interfaces matching the accessibility standards",
-            "Shopify, Magento 2, Wordpress",
-            "REST API",
+            "Reliable Back-End",
+            "Accessible Interfaces",
+            "Mobile-responsive design",
             "Managing databases",
+            "Cross-browser compatibility",
+            "Adaptability and flexibility",
         ],
         heading: "Here are a Few Highlights:",
         },

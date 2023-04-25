@@ -15,7 +15,7 @@
   }
   
   .resume-bullets {
-    box-shadow: 15px 0 9px -15px #1f2235;
+    box-shadow: 15px 0 9px -15px #000;
     height: 100%;
     width: 320px;
   }
@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color: #1f2235;
+    background-color: #000;
     height: 40px;
     margin: 15px 0;
     padding: 0 8px;
@@ -82,7 +82,7 @@
     width: 34px;
     height: 100%;
     z-index: 1;
-    background-color: #1f2235;
+    background-color: #000;
     position: absolute;
   }
   
@@ -111,7 +111,7 @@
   }
   
   .resume-main-heading span {
-    color: var(--dark-orange);
+    color: var(--maroon);
     font-size: 16px;
     font-family: "Poppins SemiBold";
   }
@@ -127,7 +127,7 @@
     width: 15px;
     top: 5px;
     border-radius: 50%;
-    background-color: #ff5823;
+    background-color: #e10c0c;
   }
   
   .resume-sub-heading {
@@ -143,7 +143,7 @@
   }
   
   .heading-date {
-    background-color: #ff5823;
+    background-color: #e10c0c;
     padding: 4px 12px;
     font-size: 14px;
     border-radius: 14px;
@@ -169,20 +169,20 @@
     position: relative;
     height: 15px;
     width: 70%;
-    background-color: #ff5823;
+    background-color: #e10c0c;
   }
   
   .skill-percentage .active-percentage-bar {
     height: 15px;
     transition: 0.8s ease;
     position: absolute;
-    background-color: #1f2235;
+    background-color: #000;
   }
   
   .skill-parent span {
     font-family: "Poppins Bold";
     font-size: 16px;
-    color: #ff5823;
+    color: #e10c0c;
   }
   
   /* IPAD PRO RESPONSIVENESS */

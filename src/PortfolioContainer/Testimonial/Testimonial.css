@@ -15,7 +15,7 @@
     height: 100%;
     z-index: -1;
     opacity: 0.85;
-    background-color: #1f2235;
+    background-color: #000;
   }
   .footer-image {
     width: 100%;
@@ -46,11 +46,11 @@
   }
   .testimonial-section .testi-item p .fa-quote-left {
     margin-right: 5px;
-    color: tomato;
+    color: #000;
   }
   .testimonial-section .testi-item p .fa-quote-right {
     margin-left: 5px;
-    color: tomato;
+    color: #000;
   }
   
   .testimonial-section .testi-comment .stars {
@@ -62,7 +62,7 @@
   }
   .testimonial-section .testi-comment .stars li i {
     font-size: 13px;
-    color: tomato;
+    color: #000;
   }
   .testimonial-section .client-info {
     position: relative;

@@ -5,73 +5,68 @@ import "./Profile.css";
 
 export default function Profile() {
   return (
-    <div className='profile-container'>
-        <div className='profile-parent'>
-            <div className='profile-details'>
-                <div className='colz'>
-                    <div className='colz-icon'>
-                        <a href='#'>
-                            <i className='fa fa-facebook-square'></i>
+    <div className='container'>
+        <div className='row'>
+            <div className='col-12 col-md-6 profile-img-mobile'>
+                <div className='profile-img'></div>
+            </div>
+            <div className='col-12 col-md-6 text-md-left text-center mt-3'>
+                    <div className='icons'>
+                        <a className='m-1' href='https://www.linkedin.com/in/maroungrey/' target="_blank">
+                            <i className='fa fa-linkedin-square'></i>
                         </a>
-                        <a href='#'>
-                            <i className='fa fa-google-plus-square'></i>
+                        <a className='m-1' href='https://github.com/maroungrey' target="_blank">
+                            <i className='fa fa-github'></i>
                         </a>
-                        <a href='#'>
+                        <a className='m-1' href='https://www.instagram.com/the_real_maroun/' target="_blank">
                             <i className='fa fa-instagram'></i>
                         </a>
-                        <a href='#'>
-                            <i className='fa fa-youtube-square'></i>
-                        </a>
-                        <a href='#'>
-                            <i className='fa fa-twitter'></i>
-                        </a>
                     </div>
-                </div>
             
 
-                <div className='profile-details-name'>
+                <div className='profile-details-name mt-2'>
                     <span className='primary-text'>
-                        {" "}
                         Hello, I'm <span className='highlighted-text'>Maroun</span>
                     </span>
                 </div>
-                <div className='profile-details-role'>
+                <div className='profile-details-role mt-2'>
                     <span className='primary-text'>
-                        {" "}
-                        <h1>
-                            {" "}
+                        <h1 className='font-hermit'>
                             <Typical
+                            
                             loop={Infinity}
                             steps={[
-                                "Enthusiastic Dev",
+                                "Software Engineer",
                                 1000,
                                 "Full Stack Developer",
                                 1000,
-                                "MERN Stack Dev",
+                                "E-Commerce Developer",
                                 1000,
-                                "Cross Platform",
-                                1000,
-                                "React/React Native Dev",
+                                "Web Developer",
                                 1000,
                             ]}
+
                             />
                         </h1>
                         <span className='profile-role-tagline'>
-                            Knack of building applications with front and back end operations.
+                            Transforming ideas into seamless software solutions
                         </span>
                     </span>
                 </div>
-                <div className='profile-options'>
-                    <button className='btn primary-btn' onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
-                        Hire Me
-                    </button>
-                    <a href='MarounBarqawi.pdf'>
-                        <button className='btn highlighted-btn' download="MarounBarqawi.pdf">Download Resume</button>
-                    </a>
+                <div className='profile-options mt-3'>
+                    <div className='row'>
+                        <div className='profile-buttons'>                    
+                            <a className='btn primary-btn outlined-btn m-2' onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
+                                Get in Touch
+                            </a>
+                            <a href='#'className='btn highlighted-btn m-2'>View Resume</a>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
-            <div className='profile-picture'>
-                <div className='profile-picture-background'></div>
+            <div className='col-12 col-md-6 profile-img-desktop'>
+                <div className='profile-img'></div>
             </div>
         </div>
     </div>
