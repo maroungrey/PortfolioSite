@@ -1,18 +1,23 @@
-.main-container {
-    min-height: 100vh;  
-    margin: 100px 0 -450px 0;
-  }
   
   .central-form {
-    max-width: 1100px;
     padding: 10px;
     display: flex;
-    box-shadow: 0 0px 20px -2px #000;
-    border-radius: 12px;
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
-    background-color: #000;
+    background: rgba(0, 0, 0, .45) url('./Banner.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+  }
+  .email-image {
+    width: 200px;
+    height: 200px;
+    background: url('./email.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
   }
   
   .central-form h2 {
@@ -23,8 +28,9 @@
   }
   
   .back-form {
-    max-width: 380px;
     margin: 0 auto;
+    background: black;
+    border-radius: 12px;
   }
   
   .back-form .img-back {
@@ -41,8 +47,7 @@
   }
   
   .back-form .img-back img {
-    width: 100%;
-    opacity: 0.5;
+    width: 200px;
   }
   
   .central-form form {
@@ -53,7 +58,6 @@
     padding: 15px;
     justify-content: center;
     flex-direction: column;
-    margin-top: -52px;
     opacity: 0.9;
     background-color: white;
     box-shadow: 0 0px 20px -2px #000;
@@ -88,11 +92,11 @@
   }
   
   textarea:focus {
-    border: 2px solid rgba(30, 85, 250, 0.47);
+    border: 2px solid rgba(137, 0, 0, 0.5);
     background-color: #fff;
   }
   form input:focus {
-    border: 2px solid rgba(30, 85, 250, 0.47);
+    border: 2px solid rgba(137, 0, 0, 0.5);
     background-color: #fff;
   }
   
@@ -127,7 +131,7 @@
     color: green;
   }
   .col i {
-    padding: 7px;
+    padding-right: 15px;
     color: #fff;
   }
   .col i:hover {

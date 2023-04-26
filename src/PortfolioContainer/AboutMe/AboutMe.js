@@ -38,6 +38,11 @@ export default function AboutMe(props) {
                 </div>
             </div>
         </div>
+        <div className='footer-container mt-5'>
+            <div className='footer-parent'>
+                <img src="./shape-02.png" alt='no internet'/>
+            </div>
+        </div>
         </div>
   )
 }

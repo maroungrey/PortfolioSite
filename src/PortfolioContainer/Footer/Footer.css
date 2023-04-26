@@ -1,4 +1,5 @@
 .scroll-container {
+  display:none;
     position: absolute;
     text-align: center;
     right: 0;
