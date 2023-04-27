@@ -14,7 +14,7 @@ export default function Projects(props) {
     const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   return (
-    <div className="projects-container screen-container" id={props.id || ""}>
+    <div className="projects-container screen-container pb-5" id={props.id || ""}>
         <div className="projects-parent">
             <ScreenHeading title={"Projects"} subHeading={"My Latest Works"} />
         </div>
@@ -23,27 +23,50 @@ export default function Projects(props) {
 
             <div className='row'>
 
-                <div className='col-12 col-lg-6'>
-                    <div className="project-1-image"></div>
-                    <div className="project-1-textbox">
-                        <h3>Lorem Ipsum</h3>
-                        <p>aaaaaaaaaaaaaaaaa</p>
-                    </div>
+                <div className='col-12 col-md-4 mb-5 project-card'>
+                    <a className='text-decoration-none' href='https://ishoppurium.com/' target='_blank'>
+                        <div className="project-image">
+                            <img className='img-responsive' src='./portfolio-1.png' />
+                        </div>
+                        <div className="project-textbox">
+                            <h5>Purium</h5>
+                            <p>Shopify Plus, SQL, React, Node.js, Bootstrap, Wordpress, Azure</p>
+                        </div>
+                    </a>
                 </div>
 
-                <div className='col-12 col-lg-6'>
-                    <div className="project-2-image"></div>
-                    <div className="project-3-image"></div>
+                <div className='col-12 col-md-4 mb-5 project-card'>
+                    <a className='text-decoration-none' href='https://eargasm.com/' target='_blank'>
+                        <div className="project-image">
+                            <img className='img-responsive' src='./portfolio-2.png' />
+                        </div>
+                        <div className="project-textbox">
+                            <h5>Eargasm</h5>
+                            <p>Shopify Plus, HTML, CSS, JavaScript, Bootstrap, Liquid, REST API</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div className='col-12 col-md-4 mb-5 project-card'>
+                    <a className='text-decoration-none' href='https://www.panoplie.com/' target='_blank'>
+                        <div className="project-image">
+                            <img className='img-responsive' src='./portfolio-3.png' />
+                        </div>
+                        <div className="project-textbox">
+                            <h5>Panoplie</h5>
+                            <p >Magento 2, PHP, Apache, HTML, CSS, JavaScript, Figma, Linux </p>
+                        </div>
+                    </a>
                 </div>
             </div>
             
         </div>
 
-        <div className='footer-container'>
+        {/* <div className='footer-container'>
             <div className='footer-parent'>
                 <img src="./shape-03.png" alt='no internet'/>
             </div>
-        </div>
+        </div> */}
 
     </div>
     

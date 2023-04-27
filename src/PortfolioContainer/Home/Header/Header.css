@@ -33,7 +33,7 @@
     .header-logo {
       display: block;
       float: none;
-      margin: 1rem auto !important;
+      margin: 2rem auto !important;
     }
     .header-logo img {
       width: 100%;
@@ -41,11 +41,10 @@
     .header-parent {
       display: block;
     }
-    .selected-header-option {
+    .header-option:hover {
       color: var(--maroon);
+      font-size: 1rem;
       font-weight: 600;
-      font-family: 'Poppins Bold';
-      font-size: 1.2rem;
     }
   }
 
@@ -86,9 +85,9 @@
     .header-option-separator {
       margin: 0;
     }
-    .selected-header-option {
+    /* .selected-header-option {
       color: white;
-    }
+    } */
     .header-hamburger-bars {
       font-size: 36px;
       cursor: pointer;

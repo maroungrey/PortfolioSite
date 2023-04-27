@@ -17,10 +17,10 @@ export default function AboutMe(props) {
         <div className="about-me-container screen-container" id={props.id || ""}>
         <div className="about-me-parent">
             <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
-            <div className="about-me-card container">
+            <div className="about-me-card container pb-5">
                 <div className='row'>
-                    <div className="col-12 col-lg-6">
-                        <div className='about-me-image'></div>
+                    <div className="col-12 col-lg-6 about-me-image">
+                        <img className='img-responsive' src='./maroun-6-02.png'/>
                     </div>
                     <div className="col-12 col-lg-6 mt-3">
                         <p className="about-me-description text-center text-lg-left">
@@ -38,11 +38,11 @@ export default function AboutMe(props) {
                 </div>
             </div>
         </div>
-        <div className='footer-container mt-5'>
+        {/* <div className='footer-container-red'>
             <div className='footer-parent'>
                 <img src="./shape-02.png" alt='no internet'/>
             </div>
-        </div>
+        </div> */}
         </div>
   )
 }

@@ -30,13 +30,8 @@
 }
 
 
-
-.profile-img {
-    height: 300px; /* give your required height */
-    width: 300px;
-    background:url('https://avatars.githubusercontent.com/u/62679040?v=4');
-    background-size:cover;
-
+.profile-img img{
+    max-width: 100%;
 }
 
 .profile-img-desktop .profile-img{
@@ -46,14 +41,7 @@
     margin: auto;
 }
 
-@media screen and (min-width: 768px) {
-    .profile-img-desktop {
-        display: block
-    }
-    .profile-img-mobile {
-        display: none;
-    }
-}
+
 
 @media screen and (max-width: 768px) {
     .profile-details-name {
@@ -68,9 +56,6 @@
     }
     .profile-img-desktop {
         display: none;
-    }
-    .profile-img-mobile {
-        display: block;
     }
     .profile-buttons {
         margin: auto;
