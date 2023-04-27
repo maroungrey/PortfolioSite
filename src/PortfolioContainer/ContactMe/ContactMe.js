@@ -131,7 +131,7 @@ export default function ContactMe(props) {
                         <div className='send-btn'>
                             <button type='submit'>
                                 Send
-                                <i className='fa fa-paper-plane' />
+                                {/* <i className='fa fa-paper-plane' /> */}
                                 {bool?(<b className='load'>
                                     <img src={load1} alt='' />
                                 </b>):("")}

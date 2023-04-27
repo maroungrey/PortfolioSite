@@ -30,7 +30,7 @@ export default function AboutMe(props) {
                             <a className="btn primary-btn m-2" onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                                 Hire Me
                             </a>
-                            <a className="btn highlighted-btn m-2" href="MarounBarqawi.pdf">
+                            <a className="btn highlighted-btn m-2" href="https://maroun-barqawi.tiiny.site/" target="_blank">
                                 View Resume
                             </a>
                         </div>

@@ -54,7 +54,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      "Working with Maroun has been a game-changer for our website. He was able to deliver a high-quality website within a tight deadline, and we couldn't be happier with the result."
+                      Working with Maroun has been a game-changer for our website. He was able to deliver a high-quality website within a tight deadline, and we couldn't be happier with the result.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -77,7 +77,7 @@ export default function Testimonial(props) {
                   </div>
                   <div className="client-info">
                     <img
-                      src="./img/lady.png"
+                      src="./img/daisy.jpg"
                       alt="no internet connection"
                     ></img>
                     <h5>Amy V.</h5>
@@ -91,7 +91,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      "I highly recommend Maroun to anyone looking for a web developer. He is not only skilled and knowledgeable, but also easy to work with."
+                      I highly recommend Maroun to anyone looking for a web developer. He is not only skilled and knowledgeable, but also easy to work with.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -105,7 +105,7 @@ export default function Testimonial(props) {
                         <i className="fa fa-star" />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
+                        <i className="fa fa-star" />
                       </li>
                       <li>
                         <i className="fa fa-star" />
@@ -113,7 +113,7 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src="./img/man.png" alt="no internet connection"></img>
+                    <img src="./img/man2.jpg" alt="no internet connection"></img>
                     <h5>Carlo S.</h5>
                     <p>Entrepreneur</p>
                   </div>
@@ -125,7 +125,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      "I've had the pleasure of working with Maroun on multiple projects. He have a great eye for design and a deep understanding of the technical side of things."
+                      I've had the pleasure of working with Maroun on multiple projects. He have a great eye for design and a deep understanding of the technical side of things.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -139,7 +139,7 @@ export default function Testimonial(props) {
                         <i className="fa fa-star" />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
+                        <i className="fa fa-star" />
                       </li>
                       <li>
                         <i className="fa fa-star" />
@@ -148,7 +148,7 @@ export default function Testimonial(props) {
                   </div>
                   <div className="client-info">
                     <img
-                      src="./img/mike.png"
+                      src="./img/roy.jpg"
                       alt="no internet connection"
                     ></img>
                     <h5>Roy S.</h5>
@@ -176,7 +176,7 @@ export default function Testimonial(props) {
                         <i className="fa fa-star" />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
+                        <i className="fa fa-star" />
                       </li>
                       <li>
                         <i className="fa fa-star" />
@@ -185,11 +185,11 @@ export default function Testimonial(props) {
                   </div>
                   <div className="client-info">
                     <img
-                      src="./img/daisy.jpg"
+                      src="./img/lamara.jpg"
                       alt="no internet connection"
                     ></img>
-                    <h5>Lamara</h5>
-                    <p>Designer</p>
+                    <h5>Lamara S.</h5>
+                    <p>Graphic Designer</p>
                   </div>
                 </div>
               </div>
@@ -213,7 +213,7 @@ export default function Testimonial(props) {
                         <i className="fa fa-star" />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
+                        <i className="fa fa-star" />
                       </li>
                       <li>
                         <i className="fa fa-star" />
@@ -222,7 +222,7 @@ export default function Testimonial(props) {
                   </div>
                   <div className="client-info">
                     <img
-                      src="./img/man2.jpg"
+                      src="./img/david.jpg"
                       alt="no internet connection"
                     ></img>
                     <h5>David H.</h5>

@@ -57,7 +57,7 @@ export default function Profile() {
                                 <a className='btn primary-btn outlined-btn m-2' onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                                     Get in Touch
                                 </a>
-                                <a href='#'className='btn highlighted-btn m-2'>View Resume</a>
+                                <a href='https://maroun-barqawi.tiiny.site/' target='_blank' className='btn highlighted-btn m-2'>View Resume</a>
                             </div>
                             
                         </div>
