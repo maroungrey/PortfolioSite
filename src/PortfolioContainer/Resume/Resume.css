@@ -4,27 +4,28 @@
     flex-direction: column;
     justify-content: center;
     min-height: fit-content;
-    margin: 120px 0;
+    margin-top: 3rem 0;
   }
   
+
   .resume-card {
     display: flex;
     height: 360px;
     width: 1000px;
-    /* margin: 80px 0; */
+    margin: 80px 0; 
   }
-  
+   
   .resume-bullets {
     box-shadow: 15px 0 9px -15px #000;
     height: 100%;
-    width: 320px;
+    width: 250px;
   }
   
   .resume-bullet-details {
     flex-grow: 1;
     width: 600px;
     overflow: hidden;
-    padding: 0 0 0 80px;
+    padding: 0 60px;
   }
   
   .experience-description {
@@ -49,7 +50,7 @@
   }
   
   .bullets {
-    width: 86%;
+    width:90%;
     position: relative;
     z-index: 2;
   }
@@ -185,19 +186,9 @@
     color: var(--maroon);
   }
   
-  /* IPAD PRO RESPONSIVENESS */
-  @media only screen and (max-width: 1110px) {
-    .resume-card {
-      width: 880px;
-    }
-  
-    .resume-bullet-details {
-      padding: 0 0 0 70px;
-    }
-  }
-  
-  /* IPAD RESPONSIVENESS */
-  @media only screen and (max-width: 1023px) {
+
+
+  @media only screen and (max-width: 992px) {
     .resume-content {
       display: flex;
       flex-direction: column;
@@ -224,6 +215,7 @@
     }
   
     .resume-bullets {
+      box-shadow: none;
       margin: 30px 0;
       width: 100%;
     }
@@ -231,5 +223,14 @@
     .selected-bullet {
       width: 100%;
     }
+  }
+
+  @media only screen and (max-width: 450px) {
+
+
+  .resume-description-text {
+    line-height:15px;
+  }
+
   }
   

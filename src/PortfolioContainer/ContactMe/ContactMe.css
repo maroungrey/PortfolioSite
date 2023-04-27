@@ -1,4 +1,11 @@
-  
+.copyright {
+  text-align: center;
+  color: #eeeeee;
+  background-color: #000;
+  font-size: 12px;
+  padding: 5px;
+  color: #808080;
+}
   .central-form {
     padding: 10px;
     display: flex;

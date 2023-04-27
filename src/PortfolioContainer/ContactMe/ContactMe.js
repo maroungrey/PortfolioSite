@@ -12,6 +12,7 @@ import Footer from "../../PortfolioContainer/Footer/Footer";
 
 export default function ContactMe(props) {
 
+
     let fadeInScreenHandler = (screen) => {	
         if (screen.fadeInScreen !== props.id) return;	
         Animations.animations.fadeInScreen(props.id);	
@@ -25,6 +26,7 @@ export default function ContactMe(props) {
     const [message, setMessage] = useState("");
     const [banner, setBanner] = useState("");
     const [bool, setBool] = useState(false);
+    
 
     const handleName = (e)=>{
         setName(e.target.value);
@@ -73,66 +75,75 @@ export default function ContactMe(props) {
 
 
             <div className='back-form'>
-                <div className='col p-5'>
-                    <h2 className='title'>
-                        <Typical
-                        loop={Infinity}
-                        steps={[
-                            "Get In Touch",
-                            1000,
-                        ]}
-                        />
-                    </h2>
-                    <div>
-                        <a href='https://www.linkedin.com/in/maroungrey/' target="_blank">
-                            <i className='fa fa-linkedin-square'></i>
-                        </a>
-                        <a href='https://github.com/maroungrey' target="_blank">
-                            <i className='fa fa-github'></i>
-                        </a>
-                        <a href='https://www.instagram.com/the_real_maroun/' target="_blank">
-                            <i className='fa fa-instagram'></i>
-                        </a>
+                <div className='col'>
+
+                    <div className='p-3'>
+                        <h2 className='title'>
+                            <Typical
+                            loop={Infinity}
+                            steps={[
+                                "Get In Touch",
+                                1000,
+                            ]}
+                            />
+                        </h2>
+                        <div>
+                            <a href='https://www.linkedin.com/in/maroungrey/' target="_blank">
+                                <i className='fa fa-linkedin-square'></i>
+                            </a>
+                            <a href='https://github.com/maroungrey' target="_blank">
+                                <i className='fa fa-github'></i>
+                            </a>
+                            <a href='https://www.instagram.com/the_real_maroun/' target="_blank">
+                                <i className='fa fa-instagram'></i>
+                            </a>
+                        </div>
+
+                        <div className='img-back'>
+                            <h4 className='pt-2 pb-2'>Send Your Email Here!</h4>
+                            <div className='email-image'></div>
+                            {/* <img src='./email.png' alt ="404" /> */}
+                        </div>
                     </div>
 
-                    <div className='img-back'>
-                    <h4 className='pt-2 pb-2'>Send Your Email Here!</h4>
-                    <div className='email-image'></div>
-                    {/* <img src='./email.png' alt ="404" /> */}
-                    </div>
                 </div>
+                <div className='col p-3'>
+                    <form onSubmit={submitForm}>
+                        <p>{banner}</p>
+                        <label htmlFor='name'>Name</label>
+                        <input type='text'
+                            onChange={handleName}
+                            value={name}
+                        />
 
-                <form onSubmit={submitForm}>
-                    <p>{banner}</p>
-                    <label htmlFor='name'>Name</label>
-                    <input type='text'
-                        onChange={handleName}
-                        value={name}
-                    />
+                        <label htmlFor='email'>Email</label>
+                        <input type='text' 
+                            onChange={handleEmail}
+                            value={email}
+                        />
 
-                    <label htmlFor='email'>Email</label>
-                    <input type='text' 
-                        onChange={handleEmail}
-                        value={email}
-                    />
+                        <label htmlFor='message'>Message</label>
+                        <textarea type='text' 
+                            onChange={handleMessage}
+                            value={message}
+                        />
 
-                    <label htmlFor='message'>Message</label>
-                    <textarea type='text' 
-                        onChange={handleMessage}
-                        value={message}
-                    />
-
-                    <div className='send-btn'>
-                        <button type='submit'>
-                            Send
-                            <i className='fa fa-paper-plane' />
-                            {bool?(<b className='load'>
-                                <img src={load1} alt='' />
-                            </b>):("")}
-                        </button>
-                    </div>
-                </form>
+                        <div className='send-btn'>
+                            <button type='submit'>
+                                Send
+                                <i className='fa fa-paper-plane' />
+                                {bool?(<b className='load'>
+                                    <img src={load1} alt='' />
+                                </b>):("")}
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
+        </div>
+
+        <div className='copyright'>
+            <span>© MarounGrey {(new Date().getFullYear())}</span>
         </div>
     </div>
   )

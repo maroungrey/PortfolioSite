@@ -85,7 +85,7 @@ const Resume = (props) => {
         fromDate={"2022"}
         toDate={"2024"}
       />
-
+<br></br>
       <ResumeHeading
         heading={"Los Angeles City College"}
         subHeading={"Candidate for BS, Computer Science & Engineering"}
@@ -105,23 +105,21 @@ const Resume = (props) => {
           toDate={"Present"}
         />
         <div className="experience-description">
-          <span className="resume-description-text">
-            <em>Created, maintained and optimized websites by designing custom features and layouts while also fine-tuning internal systems.</em>
-          </span>
+          <p className="resume-description-text">
+            <em>Created, maintained and optimized Shopify, Wordpress, Kajabi and Magento 2 websites by designing custom features and layouts while also fine-tuning internal systems.</em>
+          </p>
         </div>
+        <br></br>
+        <ResumeHeading
+          heading={"Bonner Trading"}
+          subHeading={"FRONT-END DEVELOPER"}
+          fromDate={"2020"}
+          toDate={"2021"}
+        />
         <div className="experience-description">
-          <span className="resume-description-text">
-          - Developed and maintained Shopify eCommerce website, Wordpress and Kajabi blog websites, serving a combined 7,000 daily visitors.
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Redesigned the website's interfaces to match the accessibility standards compliant with the Americans with Disabilities Act (ADA); WCAG Guidelines.
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Maintained the existing Shopify Plus theme and custom apps and modified to accommodate new functionality, created and managed collections, products and metafields.
-          </span>
-          <br />
+          <p className="resume-description-text">
+            <em>Developed and managed Magento 2 websites, designed new interfaces and extensions, implemented SEO and Google Analytics, and administered backend Apache server.</em>
+          </p>
         </div>
       </div>
     </div>,
@@ -149,30 +147,19 @@ const Resume = (props) => {
           <li>React.js</li>
           <li>PHP</li>
           <li>SQL</li>
+          <li>WordPress</li>
+          <li>Magento 2</li>
           </ul>
         </div>
       </div>
     </div>,
 
-    /* PROJECTS */
-    // <div className="resume-screen-container" key="projects">
-    //   {projectsDetails.map((projectsDetails, index) => (
-    //     <ResumeHeading
-    //       key={index}
-    //       heading={projectsDetails.title}
-    //       subHeading={projectsDetails.subHeading}
-    //       description={projectsDetails.description}
-    //       fromDate={projectsDetails.duration.fromDate}
-    //       toDate={projectsDetails.duration.toDate}
-    //     />
-    //   ))}
-    // </div>,
 
     /* Interests */
     <div className="resume-screen-container" key="interests">
-      <ResumeHeading
-        heading="Wood Carving"
-        description="One of my greatest passions is wood carving. There's something incredibly satisfying about taking a piece of raw wood and turning it into a beautiful work of art. I love experimenting with different techniques and creating intricate designs."
+      {/* <ResumeHeading
+        heading=""
+        description=""
       />
       <ResumeHeading
         heading="Language Learning"
@@ -181,7 +168,15 @@ const Resume = (props) => {
       <ResumeHeading
         heading="Growing Plants"
         description="Growing plants is another hobby that brings me great joy. Whether it's tending to my vegetable garden or nurturing indoor plants, I enjoy the peace that comes with caring for living things."
-      />
+      /> */}
+      <div className='resume-main-heading'><span>Wood Carving</span></div>
+      <div className='resume-heading-description'>One of my greatest passions is wood carving. There's something incredibly satisfying about taking a piece of raw wood and turning it into a beautiful work of art. I love experimenting with different techniques and creating intricate designs.</div>
+
+      <div className='resume-main-heading'><span>Language Learning</span></div>
+      <div className='resume-heading-description'>I'm also an avid language learner. I speak 4 languages at different levels. Living in a multicultural world, I believe it's important to understand and communicate with people from different backgrounds.</div>
+
+      <div className='resume-main-heading'><span>Growing Plants</span></div>
+      <div className='resume-heading-description'>Growing plants is another hobby that brings me great joy. Whether it's tending to my vegetable garden or nurturing indoor plants.</div>
     </div>,
   ];
 
